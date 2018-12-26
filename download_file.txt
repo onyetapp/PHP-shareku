@@ -1,0 +1,22 @@
+$this->load->helper('file');
+		$this->load->library('zip');
+
+		$read = read_file('./170220181106/logo.txt');
+
+		mkdir('./170220181106/tmp/'. now());
+
+		$write = write_file('./170220181106/tmp/'. now() .'/logo.png', $read);
+
+		if ($write) {
+			echo 'sukses';
+		}
+
+		$name = 'logo.png';
+
+		$this->zip->add_data($name, $read);
+
+		// Write the zip file to a folder on your server. Name it "my_backup.zip"
+		// $this->zip->archive('my_backup.zip');
+
+		// Download the file to your desktop. Name it "my_backup.zip"
+		$this->zip->download('my_backup.zip');

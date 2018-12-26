@@ -1,0 +1,141 @@
+Array
+(
+    [draw] => 3
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => 0
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => 1
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => 2
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => 3
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => 4
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [data] => 5
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [data] => 6
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 100
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [_] => 1545067280050
+)
+
+Result :
+{
+ "draw":1,
+ "recordsTotal":24,
+ "recordsFiltered":24,
+ "data":[
+   ["8886008101046","AQUA GELAS 240 ML","CEMILAN \/ SNACK","PCS","Rp.519","Rp.600","2,400","10"],
+   ["8886008101053","AQUA BOTOL 600 ML","CEMILAN \/ SNACK","PCS","Rp.1,748","Rp.2,100","30","24"],
+   ["8886008101091","AQUA BOTOL 1500ML","CEMILAN \/ SNACK","PCS","Rp.3,621","Rp.4,200","12","10"],
+   ["8886008101138","AQUA GALON ISI","CEMILAN \/ SNACK","PCS","Rp.14,850","Rp.17,000","100","10"],
+   ["8886008101336","AQUA BOTOL 330ML","CEMILAN \/ SNACK","PCS","Rp.1,300","Rp.1,500","710","10"],
+   ["8992003782354","ANTANGIN CAIR 15ML","CEMILAN \/ SNACK","PCS","Rp.2,420","Rp.2,700","20","10"],
+   ["8992003782453","OB HERBAL 60ML","CEMILAN \/ SNACK","PCS","Rp.9,752","Rp.11,300","2","10"],
+ ]
+}
