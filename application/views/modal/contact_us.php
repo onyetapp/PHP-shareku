@@ -3,7 +3,7 @@
 	<div class="modal-dialog modal-full-height modal-right modal-notify modal-primary" role="document">
 		<!--Content-->
 		<div class="modal-content">
-			<form>
+			<?= form_open('login/contactme', array('method' => 'post')) ?>
 			<!--Header-->
 			<div class="modal-header">
 				<p class="heading lead">Hubungi Kami</p>
@@ -61,7 +61,7 @@
 				<button type="button" class="btn btn-outline-danger" data-dismiss="modal">Batal</button>
 			</div>
 
-			</form>
+			<?= form_close() ?>
 
 		</div>
 		<!--/.Content-->

@@ -16,6 +16,9 @@
 		
     <script type="text/javascript">
     	$(document).ready(function(){
+
+			if (typeof $('#dtBasicExample-1') != 'undefined') {
+				
 				$('#dtBasicExample-1').DataTable();
 				$('.dataTables_length').addClass('bs-select');
 				// $('#dtBasicExample-1_wrapper .row:first').hide();
@@ -26,6 +29,10 @@
 					'float' : 'right'
 				});
 
+			}
+
+			if (typeof $('#particles') != 'undefined') {
+				
 				particlesJS('particles',
 				{
 					"particles": {
@@ -137,7 +144,10 @@
 					},
 					"retina_detect": true
 				});
-			});
+					
+			}
+
+		});
     </script>
 </body>
 </html>

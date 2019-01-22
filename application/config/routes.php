@@ -50,8 +50,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'login';
-$route['404_override'] = '';
+$route['404_override'] = 'login/errorPage';
 $route['translate_uri_dashes'] = FALSE;
 // my route
+$route['logout']= 'members/proseslogout';
 $route['unduh/([a-zA-Z\d\-\_]+)'] = 'login/download/$1';
+$route['unduh'] = 'login/prosesdownload';
 $route['files'] = 'login/files';
+$route['message/([a-zA-Z\d\-\_]+)'] = 'login/errorPage/$1';
+$route['message'] = 'login/errorPage';

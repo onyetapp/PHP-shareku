@@ -20,7 +20,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item <?= ($active == 'home') ? 'active' : '' ?>">
-            <a class="nav-link" href="<?= base_url() ?>"><i class="fa fa-home"></i> Beranda
+            <a class="nav-link" href="<?= base_url() ?>"><i class="fa fa-home"></i> <?= ($this->session->userdata('login_status') && $this->session->userdata('username')) ? 'Dashboard' : 'Beranda' ?>
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -37,21 +37,23 @@
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
+					<?php if ($this->session->userdata('login_status') && $this->session->userdata('username')): ?>
+
           <li class="nav-item">
-            <a href="https://www.facebook.com/" class="nav-link" target="_blank">
-              <i class="fa fa-facebook"></i>
+            <a href="<?= base_url('members') ?>" class="nav-link border border-light rounded">
+              <i class="fa fa-address-book-o"></i> Halo, <?= ucfirst($this->session->userdata('username')) ?>
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/" class="nav-link" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
+					</li>
+
+					<?php else: ?>
+
+					<li class="nav-item">
             <a href="#" class="nav-link border border-light rounded" data-toggle="modal" data-target="#contactModal">
               <i class="fa fa-address-book-o"></i> Hubungi Kami
             </a>
-          </li>
+					</li>
+
+					<?php endif; ?>
         </ul>
 
       </div>

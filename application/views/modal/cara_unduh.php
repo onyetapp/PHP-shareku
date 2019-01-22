@@ -16,8 +16,19 @@
 					<div class="modal-body">
 						<div class="text-center">
 							<i class="fa fa-download fa-4x mb-3 animated rotateIn"></i>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
-								in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.
+							<p>Pertama masuk ke pencarian File, dengan cara klik menu <a href="<?= base_url('files') ?>"><strong>Semua File</strong></a>, lalu anda akan di arahkan ke halaman daftar file.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/10.png') ?>"/>
+							<hr>
+							<p>Cari file yang anda ingin dengan cara ketikan nama atau jenis file pada pencarian (Search Box).</p>
+							<p>Klik tombol <a style="color: white; max-width: 100px; margin-bottom: 5px;" href="#" class="btn peach-gradient btn-sm btn-block"><i class="fa fa-arrow-circle-o-down"></i> Unduh</a>, lalu anda akan diarahkan ke halaman detail file.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/11.png') ?>"/>
+							<hr>
+							<p>
+							Lalu klik tombol 
+							<a href="#" style="max-width: 300px; margin-bottom: 5px;" class="btn btn-outline-primary btn-block btn-rounded waves-effect">
+								<i class="fa fa-download"></i> Unduh Sekarang
+							</a> 
+							untuk memulai unduhan file yang anda inginkan.
 							</p>
 						</div>
 

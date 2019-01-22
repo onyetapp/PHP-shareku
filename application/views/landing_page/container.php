@@ -54,7 +54,7 @@
 										
 										<?= form_open(base_url('login/proses'), array('class' => 'border border-light p-4')) ?>
 
-											<input type="email" id="defaultLoginFormUname" class="form-control mb-4" placeholder="Email atau Username" name="txtemail">
+											<input type="txt" id="defaultLoginFormUname" class="form-control mb-4" placeholder="Email atau Username" name="txtemail">
 
 											<input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Kata sandi" name="txtpassword">
 
@@ -70,15 +70,15 @@
 
 									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-										<?= form_open('', array('class' => 'border border-light p-4')) ?>
+										<?= form_open('login/prosesdaftar', array('class' => 'border border-light p-4')) ?>
 
-											<input type="text" name="txtnama" id="defaultRegisterFormName" class="form-control mb-4" placeholder="Nama Lengkap">
+											<input type="text" min="2" name="txtnama" id="defaultRegisterFormName" class="form-control mb-4" placeholder="Nama Lengkap">
 
-											<input type="text" name="txtuname" id="defaultRegisterFormUname" class="form-control mb-4" placeholder="Username">
+											<input type="text" min="5" name="txtuname" id="defaultRegisterFormUname" class="form-control mb-4" placeholder="Username">
 
 											<input type="email" name="txtemail" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-											<input type="password" name="txtpassword" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Kata sandi">
+											<input type="password" min="5" name="txtpassword" id="defaultLoginFormPassword2" class="form-control mb-4" placeholder="Kata sandi">
 
 											<button class="btn blue-gradient btn-block my-3" type="submit">Daftar</button>
 

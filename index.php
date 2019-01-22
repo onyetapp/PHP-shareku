@@ -1,11 +1,4 @@
 <?php
-// onyet creation index
-if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == 'off') {
-    
-    header('Location: https://'. $_SERVER['HTTP_HOST']);
-    exit;
-
-}
 /**
  * CodeIgniter
  *

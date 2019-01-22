@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://shareku.onyet/';
+// onyet creation index
+$onyet_request = (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == 'off') ? 'http://' : 'https://';
+
+$config['base_url'] = $onyet_request . $_SERVER['HTTP_HOST'];
+// $config['base_url'] .= preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'/';
 
 /*
 |--------------------------------------------------------------------------
@@ -521,3 +525,13 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
+// our file config
+$config['shareku_ext'] = array(
+	'musik' => array('aif', 'cda', 'mid', 'midi', 'mp3', 'mpa', 'ogg', 'wav', 'wma', 'wpl'),
+	'doc' => array('csv', 'db', 'dbf', 'log', 'mdb', 'sav', 'sql', 'xml', 'json', 'fnt', 'fon', 'otf', 'ttf', 'key', 'odp', 'pps', 'ppt', 'pptx', 'c', 'class', 'cpp', 'cs', 'h', 'java', 'sh', 'swift', 'vb', 'html', 'css', 'js', 'cpp', 'ods', 'xlr', 'xls', 'xlsx', 'doc', 'docx', 'odt', 'pdf', 'rtf', 'tex', 'txt', 'wks', 'wps', 'wpd', 'asp', 'aspx', 'cer', 'cfm', 'cgi', 'pl', 'htm', 'jsp', 'part', 'php', 'py', 'rss', 'xhtml', 'sass', 'ts', 'ildoc', 'pdf', 'pub', 'qxd', '0', '1st', '600', '602', 'abw', 'acl', 'afp', 'ami', 'ans', 'asc', 'aww', 'ccf', 'cwk', 'dbk', 'dita', 'docm', 'dot', 'dotx', 'egt', 'epub', 'ezw', 'fdx', 'ftm', 'ftx', 'gdoc', 'hwp', 'hwpml', 'mbp', 'md', 'me', 'mcw', 'mobi', 'nb', 'nbp', 'neis', 'odm', 'odoc', 'osheet', 'ott', 'omm', 'pages', 'pap', 'pdax', 'quox', 'rpt', 'sdw', 'se', 'stw', 'sxw', 'info', 'uof', 'uoml', 'via', 'wpt', 'wrd', 'wrf', 'wri', 'xps'),
+	'video' => array('3g2', '3gp', 'avi', 'flv', 'h264', 'm4v', 'mkv', 'mov', 'mp4', 'mpg', 'mpeg', 'rm', 'vob', 'wmv', 'wlmp'),
+	'gambar' => array('gif', 'jpg', 'png', 'bmp', 'ai', 'ico', 'jpeg', 'ps', 'psd', 'svg', 'tif', 'tiff', 'osz', 'nth', 'flipchart', 'cdr', 'cpt', 'dpt', 'indd', 'mcf', 'pmd', 'fm', 'sla', 'scd'),
+	'lainnya' => array('bak', 'cab', 'cfg', 'cpl', 'cur', 'dll', 'dmp', 'drv', 'icns', 'ini', 'lnk', 'msi', 'sys', 'tmp', 'apk', 'bat', 'bin', 'com', 'exe', 'gadget', 'jar', 'wsf', 'dat', 'tar', 'zip', '7z', 'cab', 'aac', 'ace', 'alz', 'appx', 'at3', 'bke', 'arc', 'arj', 'ass', 'sas', 'b', 'a', 'ba', 'bjsn', 'bzip2', 'bz2', 'deb', 'dmg', 'ddz', 'dn', 'dpe', 'ess', 'skb', 'rpm', 'lzip', 'lzma', 'lzip')
+);

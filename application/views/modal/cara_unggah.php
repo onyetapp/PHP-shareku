@@ -16,8 +16,34 @@
 					<div class="modal-body">
 						<div class="text-center">
 							<i class="fa fa-upload fa-4x mb-3 animated rotateIn"></i>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
-								in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.
+							<p>Anda harus mendaftar ke <a href="<?= base_url() ?>"><strong>Share</strong>ku</a> untuk meng-unggah file, lalu anda akan mendapatkan email konfirmasi untuk memastikan kebenaran email anda.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/1.png') ?>"/>
+							<hr>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/2.png') ?>"/>
+							<hr>
+							<p>Catatan : Cek email anda untuk verifikasi user, bila tidak ada di kotak masuk, coba cek di spam.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/4.png') ?>"/>
+							<hr>
+							<p>Setelah mendaftar dan terkonfirmasi, anda bisa masuk menggunakan email dan sandi yang telah anda daftarkan.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/3.png') ?>"/>
+							<hr>
+							<p>Seletelah berhasil masuk, anda akan menuju halan member.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/8.png') ?>"/>
+							<hr>
+							<p>Untuk memulai meng-unggah file, anda dapat masuk ke menu bar dengan menekan gambar <span class="button-collapse black-text"><i class="fa fa-bars"></i></span> yang berada di sisi pojok kiri atas anda.<br> Lalu plih menu File -> Upload File.</p>
+							<p>Atau dengan menggunakan shortcut yang berada di pojok kanan bawah.</p>
+							<img style="max-width: 40%; height: auto; display: inline;" src="<?= base_url('assets/img/unduh/5.png') ?>"/> &nbsp;
+							<img style="max-width: 40%; height: auto; display: inline;" src="<?= base_url('assets/img/unduh/9.png') ?>"/>
+							<hr>
+							<p>Setelah itu akan muncul jendela / window untuk mengunggah file yang ingin anda upload.</p>
+							<img style="max-width: 100%; height: auto;" src="<?= base_url('assets/img/unduh/6.png') ?>"/>
+							<hr>
+							<p>
+							Lalu klik tombol 
+							<a href="#" style="max-width: 100px; margin-bottom: 5px;" class="btn btn-sm btn-primary btn-block btn-rounded waves-effect">
+								Upload
+							</a> 
+							untuk memulai mengunggah file yang anda inginkan.
 							</p>
 						</div>
 

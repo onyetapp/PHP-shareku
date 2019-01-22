@@ -14,12 +14,12 @@
 			<!--Body-->
 			<div class="modal-body">
 				
-				<form>
+				<?= form_open('login/requestReset', array('method' => 'post')) ?>
 
 					<input type="email" name="txtemailreset" class="form-control" placeholder="Masukan E-Mail Anda...">
-					<button type="button" class="btn btn-primary float-right" onclick="$('#alertInfoSend').show();" data-dismiss="modal">Reset</button>
+					<button type="submit" name="btnsubmit" class="btn btn-primary float-right">Reset</button>
 
-				</form>
+				<?= form_close() ?>
 
 			</div>
 
