@@ -118,7 +118,7 @@ class Login extends CI_Controller {
 
 				$read = read_file('./1996022518110264/'. $exist->file_nama);
 
-				$this->zip->add_data($exist->file_nama_asli .'.'. $exist->file_type, $read);
+				$this->zip->add_data($exist->file_nama_asli, $read);
 
 				// Write the zip file to a folder on your server. Name it "my_backup.zip"
 				// $this->zip->archive('my_backup.zip');
