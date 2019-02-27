@@ -380,7 +380,7 @@ class Onyet_model extends CI_Model {
 		$this->load->helper('email');
 		$this->load->library('session');
 
-		$penerima	= array('onyetcorp@gmail.com');
+		$penerima	= array('dian.wibowo@clickoding.id');
 		$pengirim 	= $this->_clearUnixChar($pengirim, array('@', '.', '_', '-'));
 		$subject 	= 'Shareku K&S : '. htmlentities($subject);
 		$message	= htmlentities($message);

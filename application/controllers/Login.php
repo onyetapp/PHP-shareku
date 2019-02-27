@@ -177,11 +177,22 @@ class Login extends CI_Controller {
 
 	public function contactMe() {
 
-		$nama	= $this->input->post('txtnama');
+		$this->load->library('session');
+
+		$nama	= trim($this->input->post('txtnama'));
 		$email 	= $this->input->post('txtemail');
 		$pesan 	= $this->input->post('txtmessage');
+		$pesan 	= trim($pesan);
 
-		$send 	= $this->model->sendMeEmail($email, $nama, $pesan);
+		if (isset($pesan) && $pesan != '' && isset($nama) && $nama != '') {
+			
+			$send 	= $this->model->sendMeEmail($email, $nama, $pesan);
+
+		} else {
+
+			$this->session->set_flashdata('error', 'Harap isi nama anda dan pesan anda!');
+
+		}
 
 		redirect('../message', 'location');
 
