@@ -23055,7 +23055,7 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`user_id`, `user_uname`, `user_email`, `user_pass`, `user_nama`, `user_organisasi`, `user_website`, `user_about`, `user_avatar`, `user_guest_id`, `user_tgl_daftar`, `user_tgl_verify`, `user_status`) VALUES
-(1, 'unjunk', 'onyetcorp@gmail.com', '93d9e6ddb45fe8bc116112997da224ee362cd20e4bccde6d729cc889', 'dian mukti wibowo', 'Shareku.Net', 'http://shareku.net', 'i like shareku, because simple', '8.jpg', 1, 1547450453, 1547450992, 'active'),
+(1, 'unjunk', 'onyet@shareku.net', '93d9e6ddb45fe8bc116112997da224ee362cd20e4bccde6d729cc889', 'dian mukti wibowo', 'Shareku.Net', 'http://shareku.net', 'i like shareku, because simple', '8.jpg', 1, 1547450453, 1547450992, 'active'),
 (2, 'ggsurya16', 'stevevai0210@gmail.com', 'c56a9cc06698311dbe0572efb9955d794a60305190dbcc36c585f82b', 'ilham alif jamaluddin', 'Shareku.Net', 'http://shareku.net', 'i like shareku, because simple', '4.jpg', 5, 1547459961, 1547460038, 'active'),
 (3, 'aldi', 'fauziaaldiii@gmail.com', '84344a3aaaddbccebcc45d3db6f0168cc6ba4eecab7a7269893eac04', 'aldifz', 'Shareku.Net', 'http://shareku.net', 'i like shareku, because simple', '5.jpg', 4, 1547460003, 1547460104, 'active'),
 (4, 'aldi1', 'aldifauziar@gmail.com', '84344a3aaaddbccebcc45d3db6f0168cc6ba4eecab7a7269893eac04', 'aldi', 'Shareku.Net', 'http://shareku.net', 'i like shareku, because simple', '13.jpg', 8, 1547461623, NULL, 'active'),

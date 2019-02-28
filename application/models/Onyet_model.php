@@ -19,7 +19,7 @@
                       ////////|\\\\\\\\
                     =====================
 website : https://bukalapak.com/u/onyetcorp
-email : onyetcorp@gmail.com
+email : onyet@shareku.net
 no. HP : 08-222-187-4500 / 08-222-187-4400
 nim : 18.11.0264
 */
@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Onyet_model extends CI_Model {
 	
 	public $hashalgo = 'sha3-224';
-	protected $emailsender = 'onyetcorp@gmail.com';
+	protected $emailsender = 'onyet@shareku.net';
 	
 	public function __construct() {
 
@@ -351,7 +351,7 @@ class Onyet_model extends CI_Model {
 			</html>
 			';
 
-			if ($this->_sendEmail($userdata['user_email'], 'onyetcorp@gmail.com', 'Konfirmasi Email Anda', $micin, $userdata['user_nama'])) {
+			if ($this->_sendEmail($userdata['user_email'], 'onyet@shareku.net', 'Konfirmasi Email Anda', $micin, $userdata['user_nama'])) {
 				
 				$this->session->set_flashdata('success', 'Berhasil Mendaftar, Silahkan Cek Email Anda!');
 
@@ -467,7 +467,7 @@ class Onyet_model extends CI_Model {
 					</html>
 					';
 
-					if ($this->_sendEmail($email, 'onyetcorp@gmail.com', 'Konfirmasi Email Anda', $micin, $cekuser->user_nama)) {
+					if ($this->_sendEmail($email, 'onyet@shareku.net', 'Konfirmasi Email Anda', $micin, $cekuser->user_nama)) {
 						
 						$this->session->set_flashdata('success', 'Berhasil meminta setel ulang kata sandi, <br>Silahkan Cek Email Anda!');
 
