@@ -190,7 +190,7 @@ class Members extends CI_Controller {
 
 			if (isset($_POST['submitku'])) {		
 			
-				$config['upload_path']          = './1996022518110264/';
+				$config['upload_path']          = './pathtofiles/';
 				$config['allowed_types']        = $allowext2;
 				$config['file_name']			= microtime() . '.txt';
 				$config['max_size']             = 2000;

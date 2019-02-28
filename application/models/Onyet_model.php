@@ -798,7 +798,7 @@ class Onyet_model extends CI_Model {
 
 			} else {
 
-				unlink('./1996022518110264/'. $data['file_nama']);
+				unlink('./pathtofiles/'. $data['file_nama']);
 				return FALSE;
 
 			}
@@ -835,7 +835,7 @@ class Onyet_model extends CI_Model {
 
 			if ($u == 1) {
 				
-				unlink('./1996022518110264/'. $detailfile->file_nama);
+				unlink('./pathtofiles/'. $detailfile->file_nama);
 
 			}
 
